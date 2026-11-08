@@ -28,7 +28,7 @@ const formatCoordinate = (
 };
 
 const concatenateArrays = <T>(...arrays: T[][]): T[] => {
-  const result: T[] = [];
+  let result: T[] = [];
   for (const array of arrays) {
     result.push(...array);
   }
@@ -45,7 +45,7 @@ const getPopularCourses = (
   courses: Course[],
   minStudents: number,
 ): Course[] => {
-  const result: Course[] = [];
+  let result: Course[] = [];
   for (const course of courses) {
     if (course.isPublished === true && course.students >= minStudents) {
       result.push(course);
@@ -53,4 +53,13 @@ const getPopularCourses = (
   }
 
   return result;
+};
+
+const pluckValues = <T, K extends keyof T>(items: T[], key: K): T[K][] => {
+  let value: T[K][] = [];
+  for (const item of items) {
+    value.push(item[key]);
+  }
+
+  return value;
 };
