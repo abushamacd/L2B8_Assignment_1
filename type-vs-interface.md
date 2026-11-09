@@ -1,4 +1,4 @@
-# Differences between type aliases and interface in TypeScript, and When to Use Them
+# Differences between type aliases and interface in TypeScript, and When to use them
 
 ## Introduction
 

@@ -1,4 +1,4 @@
-# Type Narrowing in TypeScript. Example of typeof, instanceof, and in Operator
+# Type Narrowing in TypeScript. Example of typeof, instanceof, and in operator
 
 ## Introduction
 
